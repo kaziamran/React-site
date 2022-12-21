@@ -360,9 +360,9 @@ a {
 
 /* section_content */
 .section_content {
-	text-align: left;
-	text-transform: uppercase;
-	padding-bottom: 60px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 40px;
 }
 
 .section_content h6 {
@@ -759,44 +759,13 @@ a {
 	margin-left: -48px;
 }
 
-
-/* pricing_area */
-/* single_pricebox */
-.single_pricebox {
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	position: relative;
-	padding: 40px 50px 50px 50px;
-	background-color: #fff;
-	box-shadow: 0 0 20px rgba(0,0,0,.2);
-	text-align: center;
-}
-
-/* active div */
-.single_pricebox.active {
-	background-color: #ff214f;
-	color: #fff;
-}
-
-.single_pricebox.active .fas.fa-toolbox, .single_pricebox.active .pricing_head h4, .single_pricebox.active .pricing_amount h3, .single_pricebox.active .pricing_featruse p {
-	color: #ffffff;
-}
-
-.single_pricebox.active .box_btn{
-	background-color: #fff;
-	color: #000;
-}
-
 /* noHover class */
 .active .noHover.box_btn::before {
 	background-color: transparent;
 	cursor: pointer;
 }
 
-
-.single_pricebox .fas.fa-toolbox, .single_pricebox .fas.fa-user-tie, .single_experience .fas.fa-toolbox, .single_experience .fas.fa-user-tie{
+ .single_experience .fas.fa-toolbox, .single_experience .fas.fa-user-tie{
 	width: 45px;
 	height: 45px;
 	color: #ff214f;
@@ -804,7 +773,7 @@ a {
 	font-size: 34px;
 }
 
-.single_pricebox .pricing_head h4, .single_experience h3 {
+.single_experience h3 {
 	font-size: 21px;
 	margin-bottom: 23px;
 	color: #2f2c2c;
@@ -812,13 +781,6 @@ a {
 	font-family: 'Rubik';
 }
 
-.single_pricebox .pricing_amount h3 {
-	margin-bottom: 17px;
-	font-weight: 700;
-	font-size: 33px;
-	color: #000;
-	font-family: 'Rubik';
-}
 
 .pricing_featruse p, .single_experience p, .single_experience .year {
 	font-size: 17px;
@@ -829,149 +791,23 @@ a {
 	padding-bottom: 12px;
 }
 
-.single_pricebox .box_btn {
-	text-decoration: none;
-	color: #fff;
-	display: inline-block;
-	background-color: #ff214f;
-	padding: 10px 38px;
-	font-family: 'Rubik';
-	-webkit-transition: all .3s ease;
-	-moz-transition: all .3s ease;
-	-ms-transition: all .3s ease;
-	-o-transition: all .3s ease;
-	transition: all .3s ease;
-	margin-top: 20px;
-	font-size: 21px;
-}
-
-
-/* single_news */
-.single_news {
-	width: 100%;
-	height: auto;
-	clear: both;
-	position: relative;
-	box-shadow: 0 0 20px rgba(0,0,0,.2);
-}
-
-.news_img .img_text {
-	position: absolute;
-	top: 0;
-	color: #fff;
-	background-color: #FF214F;
-	padding: 10px 14px;
-	font-size: 16px;
-	font-weight: inherit;
-}
-
-/* news_img */
-.news_img {
-	width: 100%;
-	max-height: 100%;
-}
-
-.news_img img {
-	min-height: 250px;
-}
-
-/* news_content */
-.news_content {
-	width: 100%;
-	height: auto;
-	clear: both;
-	background-color: #f9f9f9; 
-	padding: 30px 50px 43px 50px;
-}
-
-.news_content .date {
-	width: 100%;
-	position: relative;
-	padding-bottom: 10px;
-	margin-bottom: 20px;
-}
-
-.news_content .date::before {
-	position: absolute;
-	content: "";
-	width: 100%;
-	height: 1px;
-	background-color: rgba(0,0,0,.2);
-	bottom: 0;
-}
-
-.news_content .date p {
-	font-size: 16px;
-	color: #57574e;
-	font-family: 'Rubik';
-}
-
-.news_content .date a {
-	color: #000;
-}
-
-.news_content .date a:hover {
-	border-bottom: 1px solid #000;
-	transition: .2s;
-}
-
-.news_content .title a {
-	font-size: 18px;
-	color: #2d2727;
-	font-weight: lighter;
-	font-family: 'Rubik';
-}
-
-.news_content .title a:hover{
-	color: #FF214F;
-}
-
 /* contact_area */
-/* contact_info */
-.contact_info {
-	padding-bottom: 50px;
+.contact_info .far.fa-address-card, .contact_info .far.fa-envelope, .contact_info .fas.fa-phone {
+    color: #FF214F;
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 14px;
+    display: inline-block;
 }
-
-.contact_info .far.fa-address-card, .contact_info .far.fa-envelope, .contact_info .fas.fa-phone{
-	color: #FF214F;
-	font-size: 23px;
-	text-align: left;
-	padding-bottom: 15px;
-}
-
 .contact_info h4 {
-	font-size: 22px;
-	padding-bottom: 10px;
-	color: #000;
+    font-size: 20px;
+    padding-bottom: 8px;
+    color: #000;
 }
-
 .contact_info p {
 	font-size: 17px;
 	font-family: 'Rubik';
 	color: #3c3535;
-}
-
-.form {
-	width: 100%;
-	float: left;
-	padding: 20px 0 20px 0;
-	line-height: 30px;
-}
-
-.form input[type="text"] {
-	width: 100%;
-	border: 1px solid rgba(0,0,0,.2);
-	background-color: #fff;
-	color: #000;
-}
-
-.form .textarea {
-	width: 100%;
-	border: 1px solid rgba(0,0,0,.2);
-	height: 120px;
-	resize: none;
-	margin-bottom: 20px;
-	background-color: #fff;
 }
 
 /* copyright_area */
@@ -980,7 +816,6 @@ a {
 	padding: 50px 0;
 	text-align: left;
 }
-
 .copyright_text p {
 	font-size: 19px;
 	color: #fff;
