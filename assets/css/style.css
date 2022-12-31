@@ -68,9 +68,6 @@ a:hover {
     text-decoration: none;
     color: transparent;
 }
-.flex {
-	display: flex;
-}
 .pt-100 {
 	padding-top: 100px;
 }
@@ -82,9 +79,6 @@ a:hover {
 }
 .mb-100 {
 	margin-bottom: 100px;
-}
-.mt-95{
-	margin-top: 95px;
 }
 .pt-50 {
 	padding-top: 50px;
@@ -162,7 +156,6 @@ a:hover {
 	text-align:right;
 }
 
-
 /* header_area */
 .header_area {
 	position: fixed;
@@ -176,7 +169,6 @@ a:hover {
 	transition: .3s;
 	position:relative;
 }
-
 
 .header_area.header_fixed {
 	position: absolute;
@@ -276,7 +268,6 @@ a:hover {
 	margin: 0 6px 0 0;
 }
 
-
 /* home_area */
 .home_area, .home_area div{
 	height: 100%;
@@ -337,7 +328,6 @@ a:hover {
 	font-size: 20px;
 }
 
-
 .home_content .bounce_icon {
 	position: absolute;
 	left: 50%;
@@ -390,7 +380,6 @@ a:hover {
 	color: #6f6f6f;
 	word-spacing: 1.8px;
 }
-
 
 /* about_info */
 .about_info {
@@ -455,25 +444,21 @@ a:hover {
 	overflow:hidden;
 	transition: all .4s;
 }
-
 .single_service:hover {
 	transform: translateY(-5px);
 	transition: all .4s;
 }
-
 .single_service .fas.fa-layer-group,  .single_service .fas.fa-toolbox, .single_service .fas.fa-cut{
 	color: #FF214F;
 	font-size: 30px;
 	padding-bottom: 20px;
 }
-
 .single_service h4 {
 	color: #000;
 	font-weight: 400;
 	padding-bottom: 20px;
 	font-size: 24px;
 }
-
 .single_service p {
 	font-size: 17px;
 	color: #6f6f6f;
@@ -483,23 +468,20 @@ a:hover {
 .skill_content {
 	text-align: left;
 }
-
 .skill_content h4 {
 	font-size: 22px;
 	padding-bottom: 30px;
 	line-height: 30px;
 	color: #000;
 }
-
 .skill_content p {
 	font-size: 17px;
 	line-height: 29px;
 	color: #6f6f6f;
 }
 
-
 /* barfiller_box */
-.barfiller_box{}
+
 .barfiller_box h5 {
 	font-size: 18px;
 	padding-bottom: 15px;
@@ -513,7 +495,6 @@ a:hover {
 	position: relative;
 	margin-bottom: 10px;
 }
-
 .barfiller .fill {
     display: block;
     position: relative;
@@ -522,11 +503,9 @@ a:hover {
     background: #333;
     z-index: 1;
 }
-
 .barfiller .tipWrap {
     display:none;
 }
-
 .barfiller .tip {
 	margin-top: -40px;
 	padding: 2px 0;
@@ -536,7 +515,6 @@ a:hover {
 	position: absolute;
 	z-index: 2;
 }
-
 
 /* portfolio_area */
 /* portfolio_menu */
