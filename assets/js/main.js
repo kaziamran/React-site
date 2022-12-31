@@ -73,9 +73,7 @@ $(document).ready(function(){
 				}
 			});
 		});
-	
-	
-	
+		
 
 	/* ScrollUp */
 	$.scrollUp({
@@ -90,8 +88,6 @@ $(document).ready(function(){
 		
 	});
 	
-	
-
 });
 	
 	/* Sticky Header */
