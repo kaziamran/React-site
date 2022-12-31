@@ -209,16 +209,24 @@ a:hover {
 	color: #FF214F !important;
 }
 
-#navbarNav a {
+.header_portfolio_menu_list {
+    gap: 20px;
+    align-items: center;
+    margin: 0 0 0 auto;
+}
+
+.header_portfolio_menu_list_itm {
+	font-family: 'Rubik';
 	font-weight: 500;
-	padding: 0 8px;
+	line-height: 1.2;
 	color: #fff;
 	font-size: 15px;
 	text-transform: capitalize;
-	font-family: 'Rubik';
+	display: flex;
+	transition: .2s all ease;
 }
 
-#navbarNav a:hover {
+.header_portfolio_menu_list_itm:hover {
 	color: #FF214F;
 }
 
@@ -253,10 +261,10 @@ a:hover {
 
 /* logo */
 .logo a {
+	font-family: 'Rubik';
 	font-size: 21px;
 	font-weight: 700;
-	font-family: 'Rubik';
-	font-style: inherit;
+	line-height: 1.2;
 	text-transform: capitalize;
 }
 
