@@ -208,7 +208,7 @@ a:hover {
 }
 
 .header_portfolio_menu_list_itm {
-	font-family: 'Rubik';
+	font-family: 'Montserrat';
 	font-weight: 500;
 	line-height: 1.2;
 	color: #fff;
@@ -253,7 +253,7 @@ a:hover {
 
 /* logo */
 .logo a {
-	font-family: 'Rubik';
+	font-family: 'Montserrat';
 	font-size: 21px;
 	font-weight: 700;
 	line-height: 1.2;
@@ -318,7 +318,7 @@ a:hover {
 	word-spacing: 5px;
 	text-transform: uppercase;
 	font-weight: 400;
-	font-family: 'Rubik';
+	font-family: 'Montserrat';
 }
 
 .color {
@@ -352,7 +352,7 @@ a:hover {
     margin-bottom: 40px;
 }
 .section_content h6 {
-	font-family: 'Rubik';
+	font-family: 'Montserrat';
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 1.2;
@@ -360,7 +360,7 @@ a:hover {
 	margin-bottom: 5px;
 }
 .section_content h3 {
-	font-family: 'Rubik';
+	font-family: 'Montserrat';
 	font-weight: 700;
 	font-size: 36x;
 	line-height: 1.2;
@@ -391,7 +391,7 @@ a:hover {
 	padding: 4px 0;
 	line-height: 27px;
 	color: #6f6f6f;
-	font-family: 'Rubik';
+	font-family: 'Montserrat';
 }
 
 .about_info ul li label {
@@ -411,7 +411,7 @@ a:hover {
 
 .about_info ul li a {
 	color: #000;
-	font-family: 'Rubik';
+	font-family: 'Montserrat';
 }
 
 .about_info ul li a:hover{
@@ -671,7 +671,7 @@ a:hover {
     display: flex;
 }
 .contact_info_cont1 {
-	font-family: 'Rubik';
+	font-family: 'Montserrat';
 	font-weight: 500;
     font-size: 19px;
 	line-height: 1.2;
@@ -679,7 +679,7 @@ a:hover {
     margin-bottom: 8px;
 }
 .contact_info_cont2, .contact_info_cont_link {
-	font-family: 'Rubik';
+	font-family: 'Montserrat';
 	font-weight: 400;
     font-size: 15px;
 	line-height: 1.2;
@@ -699,7 +699,7 @@ a:hover {
 	text-align: left;
 }
 .copyright_text p {
-	font-family: 'Rubik';
+	font-family: 'Montserrat';
 	font-weight: 400;
 	font-size: 17px;
 	line-height: 1.2;
