@@ -1,0 +1,131 @@
+/* Portfolio css */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    padding: 0px;
+    margin: 0 auto;
+}
+body {
+    margin: 0px auto;
+    padding: 0px;
+}
+p {
+    margin: 0px;
+}
+h1,h2,h3,h4, h5,h6{
+    margin: 0px;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+button:focus, input:focus, select:focus, textarea:focus{
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible{
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.navbar-toggler:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+img{
+    width:100%;
+    display:block;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: transparent;
+}
+a, button{
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+._toggler {
+    box-shadow: none !important;
+    border: none !important;
+}
+/* ._toggler.collapsed .navbar-toggler-icon {
+    background-image: url("../img/header-r8-menu-ic.svg") !important;
+    transition: 0.1s all ease-in-out;
+    max-width: 18px;
+}
+._toggler .navbar-toggler-icon {
+    background-image: url("../img/header-r8-menu-cross.svg") !important;
+    transition: 0.1s all ease-in-out;
+    max-width: 18px;
+} */
+.dropdown-toggle::after {
+    display: none;
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+/* css */
+
+._home_portfolio_wrapper {
+    background-color: rgba(255,255,255,0.6);
+    padding: 60px 0px;
+}
+
+._home_portfolio_cnt_tlt {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: right;
+    margin-bottom: 8px;
+    color: #961b18;
+}
+
+._home_portfolio_cnt_tlt1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: right;
+    margin-bottom: 8px;
+    color: #252424;
+}
+
+._home_portfolio_cnt_para {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.4;
+    text-align: right;
+    color: #2e2e2e;
+    margin: 0 0 0 40px;
+}
