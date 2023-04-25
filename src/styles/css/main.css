@@ -103,6 +103,10 @@ a, button{
     align-items: center;
 }
 
+._home_portfolio_cnt {
+    margin: 0 60px 0 0;
+}
+
 ._home_portfolio_cnt_tlt {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -130,7 +134,7 @@ a, button{
     line-height: 1.4;
     text-align: right;
     color: #2e2e2e;
-    margin: 0 0 24px 40px;
+    margin: 0 0 24px 0;
 }
 
 ._home_portfolio_cnt_btns {
@@ -155,6 +159,7 @@ a, button{
     background-color: #060773;
     border-color: transparent;
     text-transform: capitalize;
+    border-radius: 8px;
 }
 
 
