@@ -98,6 +98,9 @@ a, button{
 ._home_portfolio_wrapper {
     background-color: rgba(255,255,255,0.6);
     padding: 60px 0px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 ._home_portfolio_cnt_tlt {
@@ -107,7 +110,7 @@ a, button{
     line-height: 1.2;
     text-align: right;
     margin-bottom: 8px;
-    color: #961b18;
+    color: #060773;
 }
 
 ._home_portfolio_cnt_tlt1 {
@@ -127,5 +130,31 @@ a, button{
     line-height: 1.4;
     text-align: right;
     color: #2e2e2e;
-    margin: 0 0 0 40px;
+    margin: 0 0 24px 40px;
 }
+
+._home_portfolio_cnt_btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+._home_portfolio_cnt_btn1, ._home_portfolio_cnt_btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 180px;
+    height: 48px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #fff;
+    background-color: #060773;
+    border-color: transparent;
+    text-transform: capitalize;
+}
+
+
