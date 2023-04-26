@@ -95,6 +95,35 @@ a, button{
 
 /* css */
 
+._home_portfolio_navbar {
+    position: fixed !important;
+    top: 50%;
+    right: 4%;
+    transform: translate(0, -50%);
+}
+
+._home_portfolio_nav_ul {
+    display: block !important;
+}
+._home_portfolio_nav_li {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+._home_portfolio_nav_li:last-child {
+    margin-bottom: 0px;
+}
+._home_portfolio_nav_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+
+
 ._home_portfolio_wrapper {
     background-color: rgba(255,255,255,0.6);
     padding: 60px 0px;
@@ -161,5 +190,7 @@ a, button{
     text-transform: capitalize;
     border-radius: 8px;
 }
+
+
 
 
