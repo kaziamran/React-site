@@ -122,10 +122,16 @@ a, button{
     border-radius: 50%;
 }
 
+._light_mode {
+    --home-bg : rgba(255,255,255,0.6);
+}
 
+._dark_mode {
+    --home-bg: #000;
+}
 
 ._home_portfolio_wrapper {
-    background-color: rgba(255,255,255,0.6);
+    background-color: var(--home-bg);
     padding: 60px 0px;
     height: 100vh;
     display: flex;
