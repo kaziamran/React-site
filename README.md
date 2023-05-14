@@ -2,7 +2,7 @@ this is my first react project,
 
 google font : Roboto & Montserrat 
 
-4692DD
+main color :  4692DD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
