@@ -1,8 +1,12 @@
-this is my first react project, 
+this is my first react project, using this 
 
-google font : Roboto & Montserrat 
+1. google font : Roboto & Montserrat -
 
-main color :  4692DD
+2. website main color :  #060773 -
+
+3. google icons, feather icons, remix icons -
+
+4. follow themeforest for portolio design
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

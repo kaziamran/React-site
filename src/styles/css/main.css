@@ -138,6 +138,40 @@ a, button{
     align-items: center;
 }
 
+._home_portfolio_left_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px 0;
+}
+
+._home_portfolio_img_tag {
+    width: 280px;
+    height: 280px !important;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+._home_portfolio_social_link_heading_txt {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 8px;
+    color: #252424;
+}
+
+._home_portfolio_social_link_nav_ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    padding: 0;
+    gap: 0 8px;
+}
+
 ._home_portfolio_cnt {
     margin: 0 60px 0 0;
 }
@@ -190,11 +224,15 @@ a, button{
     font-weight: 400;
     font-size: 20px;
     line-height: 1.2;
-    color: #fff;
+    color: #fff !important;
     background-color: #060773;
     border-color: transparent;
     text-transform: capitalize;
     border-radius: 8px;
+}
+
+._home_portfolio_cnt_btn1:hover {
+
 }
 
 
