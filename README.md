@@ -7,6 +7,16 @@ this is my first react project, using this
 3. google icons, feather icons, remix icons -
 
 4. follow themeforest for portolio design
+
+
+
+-- react routing
+-- add social links 
+-- create 3 awesome page
+-- change image
+-- add animation css
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
