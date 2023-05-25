@@ -3,9 +3,11 @@ import '../../styles/css/main.css';
 
 const About = () => {
   return (
-    <div>
-        about
-    </div>
+    <>
+        <div className="_about_portfolio_wrapper">
+          
+        </div>
+    </>
   )
 }
 
