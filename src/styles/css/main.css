@@ -128,6 +128,7 @@ a, button{
 
 ._light_mode {
     --home-bg : rgba(255,255,255,0.6);
+    --page-title: #060773;
 }
 
 ._dark_mode {
@@ -267,7 +268,7 @@ a, button{
     line-height: 1.2;
     text-align: right;
     margin-bottom: 8px;
-    color: #060773;
+    color: var(--page-title);
 }
 
 ._home_portfolio_cnt_tlt1 {
@@ -346,5 +347,70 @@ a, button{
     padding: 60px 0px;
 }
 
+._about_portfolio_title {
+    position: relative;
+    margin-bottom: 18px;
+    z-index: 1;
+}
+._about_portfolio_title1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--page-title);
+    text-transform: capitalize;
+}
+._about_portfolio_title1_span {
+    color: #000;
+}
+._about_portfolio_title_bg_span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 51px;
+    line-height: 1;
+    text-align: center;
+    color: var(--page-title);
+    text-transform: capitalize;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    opacity: 0.3;
+    letter-spacing: 2px;
+}
 
+._about_portfolio_left_info_txt {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #000;
+    text-transform: capitalize;
+}
 
+._about_portfolio_left_info_list_ul {
+    margin: 0;
+    padding: 0;
+}
+
+._about_portfolio_left_info_list_li_para {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+._about_portfolio_left_info_list {
+    margin-bottom: 18px;
+}
+
+._about_portfolio_left_info ._home_portfolio_cnt_btns {
+    justify-content: flex-start;
+}
