@@ -5,7 +5,7 @@ import '../../styles/css/main.css';
 const Home = () => {
   return (
     <>
-        <div className='_home_portfolio_wrapper'>
+        <section className='_home_portfolio_wrapper'>
             <div className="_home_portfolio_elipse01">
                 <img src="../../images/ellipse01.png" className='img-fluid _home_portfolio_elipse01_img' alt="image" />
             </div>
@@ -54,10 +54,9 @@ const Home = () => {
                                             </a>
                                         </li>
 
-                                        <li title='Facebook' className='_home_portfolio_social_link_nav_li'>
-                                            <a href="https://www.facebook.com/profile.php?id=100088313264770" className='_home_portfolio_social_link_nav_link' target='_blank'>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M13 9H17.5L17 11H13V20H11V11H7V9H11V7.12777C11 5.34473 11.1857 4.69816 11.5343 4.04631C11.8829 3.39446 12.3945 2.88288 13.0463 2.53427C13.6982 2.18565 14.3447 2 16.1278 2C16.6498 2 17.1072 2.05 17.5 2.15V4H16.1278C14.8041 4 14.401 4.07784 13.9895 4.29789C13.6862 4.46011 13.4601 4.68619 13.2979 4.98951C13.0778 5.40096 13 5.80407 13 7.12777V9Z" fill="#060773"></path>
-                                                </svg>
+                                        <li title='Gmail' className='_home_portfolio_social_link_nav_li'>
+                                            <a href="mailto:kaziamran4@gmail.com" className='_home_portfolio_social_link_nav_link' target='_blank'>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12 11H20.5329C20.5769 11.3847 20.6 11.7792 20.6 12.1837C20.6 14.9184 19.6204 17.2204 17.9224 18.7837C16.4367 20.1551 14.404 20.9592 11.9796 20.9592C8.46933 20.9592 5.43266 18.947 3.9551 16.0123C3.34695 14.8 3 13.4286 3 11.9796C3 10.5306 3.34695 9.1592 3.9551 7.94698C5.43266 5.01226 8.46933 3 11.9796 3C14.4 3 16.4326 3.88983 17.9877 5.33878L16.5255 6.80101C15.3682 5.68153 13.8028 5 12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19C15.5265 19 18.1443 16.3923 18.577 13H12V11Z" fill="#060773"></path></svg>
                                             </a>
                                         </li>
                                     </ul>
@@ -72,7 +71,7 @@ const Home = () => {
                             <p className='_home_portfolio_cnt_para'>I'm a web developer. Currently 
                                 i'm working as a web designer in Appifylab. 
                                 My preferred tools are React js, JavaScript,
-                                 HTML5, CSS3, Bootstrap5, Wordpress and VScode etc.
+                                    HTML5, CSS3, Bootstrap5, Wordpress, Figma and VScode etc.
                             </p>
                             <div className="_home_portfolio_cnt_btns">
                                 <a href='https://drive.google.com/file/d/1j2VTZlGG4YYFgo_Rhl95Zkdhrgb8Uh-0/view?usp=share_link' className='_home_portfolio_cnt_btn1' target='_blank'>
@@ -88,7 +87,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </>
   )
 }
