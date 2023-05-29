@@ -195,18 +195,21 @@ a, button{
 ._home_portfolio_img {
     position: relative;
 }
-._home_portfolio_change_img {
+._home_portfolio_img_div_button_ic {
     position: absolute;
     bottom: 0;
     right: 40px;
-    width: 54px;
-    height: 54px;
+    z-index: 11;
+}
+._home_portfolio_img_div_button {
+    width: 52px;
+    height: 52px;
     background: #dddddd;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 11;
+    border: 0;
 }
 
 ._home_portfolio_left_wrap {
@@ -438,6 +441,12 @@ a, button{
     color: #000;
     text-transform: capitalize;
 }
+
+table, th, td, tr {
+    border: 1px solid #ddd !important;
+  }
+
+/* contact page */
 
 ._contact_portfolio_form_list {
     display: flex;
