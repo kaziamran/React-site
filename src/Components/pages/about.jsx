@@ -65,33 +65,39 @@ const About = () => {
               </div>
             </div>
           </div>
+
+          {/* my projects */}
           <div className="row mt-5">
-            <div className="col-lg-5 col-md-6 col-sm-6">
-              <div className="_about_portfolio_table_wrap">
-                <h2>A basic HTML table</h2>
-                <table>
-                  <tr className='table_tr'>
-                    <th>Order</th>
-                    <th>Company</th>
-                    <th>Contact</th>
-                    <th>Country</th>
-                  </tr>
-                  <tr>
-                    <td>Asce</td>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Maria Anders</td>
-                    <td>Germany</td>
-                  </tr>
-                  <tr>
-                    <td>desc</td>
-                    <td>Centro comercial Moctezuma</td>
-                    <td>Francisco Chang</td>
-                    <td>Mexico</td>
-                  </tr>
-                </table>
+            <div className="col-lg-12 col-md-12 col-sm-12">
+              <div className="_page_portfolio_title">
+                <h2 className='_page_portfolio_title1'>my <span className='_page_portfolio_title1_span'>project</span>
+                </h2>
+                <span className='_page_portfolio_title_bg_span'>portfolio</span>
               </div>
             </div>
-            <div className="col-lg-7 col-md-6 col-sm-6"></div>
+          </div>
+          <div className="row">
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <div className="_project_portfolio_card">
+                <div className="_project_portfolio_card_img">
+                  <img src="../../images/projects/project01.png" className='img-fluid' alt="image" />
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <div className="_project_portfolio_card">
+                <div className="_project_portfolio_card_img">
+                  <img src="../../images/projects/project01.png" className='img-fluid' alt="image" />
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <div className="_project_portfolio_card">
+                <div className="_project_portfolio_card_img">
+                  <img src="../../images/projects/project01.png" className='img-fluid' alt="image" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -92,8 +92,27 @@ a, button{
     background: #555;
   }
 
-
 /* css */
+
+._light_mode {
+    --nav-bg: #36363a99;
+    --home-bg : rgba(255,255,255,0.6);
+    --home-cnt: #2e2e2e;
+    --home-txt1: #252424;
+    --home-socialbg: transparent;
+    --page-title: #d3d3d4;
+    --about-txt: #000;
+}
+
+._dark_mode {
+    --nav-bg: #323232;
+    --home-bg: #000;
+    --home-txt1: #fff;
+    --home-cnt: #fff;
+    --home-socialbg: #fff;
+    --page-title: #d3d3d4;
+    --about-txt: #fff;
+}
 
 .navbar.navbar-expand-lg.navbar-dark._home_portfolio_navbar {
     z-index: 111;
@@ -122,17 +141,44 @@ a, button{
     justify-content: center;
     width: 55px;
     height: 55px;
-    background-color: #ddd;
+    background-color: var(--nav-bg);
     border-radius: 50%;
+    transition: .2s all ease-in-out;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+._home_portfolio_nav_link.active, ._home_portfolio_nav_link:hover {
+    background-color: #060773;
 }
 
-._light_mode {
-    --home-bg : rgba(255,255,255,0.6);
-    --page-title: #060773;
+._home_portfolio_nav_link_txt {
+    position: absolute;
+    content: "";
+    height: 55px;
+    background-color: #060773;
+    top: 0;
+    right: 0px;
+    border-radius: 30px 22px 22px 30px;
+    visibility: hidden;
+    z-index: -1;
+    transition: .2s all ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 34px 0px 30px;
+    opacity: 0;
 }
-
-._dark_mode {
-    --home-bg: #000;
+._home_portfolio_nav_link:hover ._home_portfolio_nav_link_txt {
+    visibility: visible;
+    right: 12px;
+    opacity: 1;
 }
 
 ._home_portfolio_wrapper {
@@ -153,6 +199,16 @@ a, button{
     opacity: 0.5;
     z-index: -1;
     clip-path: polygon(0 0, 35% 0, 66% 53%, 37% 99%, 0 99%, 0% 70%, 0% 30%);
+}
+._home_portfolio_wrapper::before {
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+    clip-path: polygon(0 0, 35% 0, 66% 53%, 37% 99%, 0 99%, 0% 70%, 0% 30%);
+    background: linear-gradient(343deg, rgb(6 7 115) 0%, rgb(83 83 108) 54%, rgba(20,165,194,1) 100%);
 }
 
 ._home_portfolio_elipse01 {
@@ -247,7 +303,7 @@ a, button{
     line-height: 1.2;
     text-align: center;
     margin-bottom: 8px;
-    color: #252424;
+    color: var(--home-txt1);
     text-transform: capitalize;
 }
 
@@ -271,7 +327,7 @@ a, button{
     line-height: 1.2;
     text-align: right;
     margin-bottom: 8px;
-    color: var(--page-title);
+    color: #060773;
 }
 
 ._home_portfolio_cnt_tlt1 {
@@ -281,7 +337,7 @@ a, button{
     line-height: 1.2;
     text-align: right;
     margin-bottom: 8px;
-    color: #252424;
+    color: var(--home-txt1);
 }
 
 ._home_portfolio_cnt_para {
@@ -290,7 +346,7 @@ a, button{
     font-size: 24px;
     line-height: 1.4;
     text-align: right;
-    color: #2e2e2e;
+    color: var(--home-cnt);
     margin: 0 0 24px 0;
 }
 
@@ -310,7 +366,7 @@ a, button{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    width: 200px;
+    width: 190px;
     height: 54px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -336,7 +392,7 @@ a, button{
     width: 33px;
     height: 33px;
     border-radius: 50%;
-    background-color: transparent;
+    background-color: var(--home-socialbg);
     transition: .2s all ease-in-out;
 }
 ._home_portfolio_social_link_nav_link:hover {
@@ -351,7 +407,10 @@ a, button{
 
 ._about_portfolio_wrapper {
     background-color: var(--home-bg);
-    padding: 60px 0px;
+    padding: 60px 0;
+    /* height: 100vh;
+    display: flex;
+    align-items: center; */
 }
 
 ._page_portfolio_title {
@@ -365,11 +424,11 @@ a, button{
     font-size: 54px;
     line-height: 1.1;
     text-align: center;
-    color: var(--page-title);
+    color: #868689;
     text-transform: uppercase;
 }
 ._page_portfolio_title1_span {
-    color: #000;
+    color: #060773;
 }
 ._page_portfolio_title_bg_span {
     font-family: 'Montserrat', sans-serif;
@@ -395,7 +454,7 @@ a, button{
     line-height: 1.2;
     text-align: left;
     margin-bottom: 12px;
-    color: #000;
+    color: var(--about-txt);
     text-transform: capitalize;
 }
 
@@ -411,7 +470,7 @@ a, button{
     line-height: 1.2;
     text-align: left;
     margin-bottom: 14px;
-    color: #000;
+    color: var(--about-txt);
 }
 
 ._about_portfolio_left_info_list {
@@ -429,7 +488,7 @@ a, button{
     line-height: 1.2;
     text-align: left;
     margin-bottom: 2px;
-    color: #000;
+    color: var(--about-txt);
 }
 ._about_portfolio_r8_job_info_txt2 {
     font-family: 'Montserrat', sans-serif;
@@ -438,15 +497,26 @@ a, button{
     line-height: 1.2;
     text-align: left;
     margin-bottom: 2px;
-    color: #000;
+    color: var(--about-txt);
     text-transform: capitalize;
 }
 
-table, th, td, tr {
-    border: 1px solid #ddd !important;
-  }
+._project_portfolio_card {
+    background-color: #060773;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+
 
 /* contact page */
+._contact_portfolio_wrapper {
+    background-color: var(--home-bg);
+    padding: 60px 0px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
 
 ._contact_portfolio_form_list {
     display: flex;
