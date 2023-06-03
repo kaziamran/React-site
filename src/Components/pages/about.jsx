@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../styles/css/main.css';
+import ProjectsCard from '../Modal/ProjectsCard';
 
 const About = () => {
+  
+  const [showProjectCard, setShowProjectCard] = useState(false);
+
   return (
     <>
       <section className="_about_portfolio_wrapper">
@@ -80,21 +84,37 @@ const About = () => {
             <div className="col-lg-4 col-md-4 col-sm-12">
               <div className="_project_portfolio_card">
                 <div className="_project_portfolio_card_img">
-                  <img src="../../images/projects/project01.png" className='img-fluid' alt="image" />
+                  <img src="../../images/projects/project01.png" className='img-fluid _project_portfolio_card_img_tag' alt="image" />
+                </div>
+                <div className="_project_portfolio_card_modal">
+                  <button className='_project_portfolio_card_modal_btn'>
+                    client porject
+                  </button>
                 </div>
               </div>
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12">
               <div className="_project_portfolio_card">
                 <div className="_project_portfolio_card_img">
-                  <img src="../../images/projects/project01.png" className='img-fluid' alt="image" />
+                  <img src="../../images/projects/project01.png" className='img-fluid _project_portfolio_card_img_tag' alt="image" />
+                </div>
+                <div className="_project_portfolio_card_modal">
+                  <button className='_project_portfolio_card_modal_btn'>
+                    client porject
+                  </button>
                 </div>
               </div>
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12">
               <div className="_project_portfolio_card">
                 <div className="_project_portfolio_card_img">
-                  <img src="../../images/projects/project01.png" className='img-fluid' alt="image" />
+                  <img src="../../images/projects/project01.png" className='img-fluid _project_portfolio_card_img_tag' alt="image" />
+                </div>
+                <div className="_project_portfolio_card_modal">
+                  <button onClick={() => setShowProjectCard(true)} className='_project_portfolio_card_modal_btn'>
+                    client porject
+                    { showProjectCard && <ProjectsCard/>}
+                  </button>
                 </div>
               </div>
             </div>

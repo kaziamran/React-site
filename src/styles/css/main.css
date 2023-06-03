@@ -505,8 +505,57 @@ a, button{
     background-color: #060773;
     border-radius: 8px;
     padding: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+._project_portfolio_card::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #060773;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s all ease-in-out;
+}
+._project_portfolio_card:hover::before {
+    opacity: 0.77;
+    visibility: visible;
+    inset: 0;
+} 
+._project_portfolio_card_img_tag {
+    border-radius: 8px;
 }
 
+._project_portfolio_card_modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s all ease-in-out;
+}
+._project_portfolio_card_modal_btn {
+    background: transparent;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 1.2;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+}
+._project_portfolio_card:hover ._project_portfolio_card_modal {
+    opacity: 1;
+    visibility: visible;
+}
 
 
 /* contact page */
