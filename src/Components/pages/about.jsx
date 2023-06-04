@@ -6,6 +6,8 @@ const About = () => {
   
   const [showProjectCard, setShowProjectCard] = useState(false);
 
+  const closeBtn = () => setShowProjectCard(false);
+
   return (
     <>
       <section className="_about_portfolio_wrapper">
@@ -81,31 +83,7 @@ const About = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-4 col-md-4 col-sm-12">
-              <div className="_project_portfolio_card">
-                <div className="_project_portfolio_card_img">
-                  <img src="../../images/projects/project01.png" className='img-fluid _project_portfolio_card_img_tag' alt="image" />
-                </div>
-                <div className="_project_portfolio_card_modal">
-                  <button className='_project_portfolio_card_modal_btn'>
-                    client porject
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-4 col-sm-12">
-              <div className="_project_portfolio_card">
-                <div className="_project_portfolio_card_img">
-                  <img src="../../images/projects/project01.png" className='img-fluid _project_portfolio_card_img_tag' alt="image" />
-                </div>
-                <div className="_project_portfolio_card_modal">
-                  <button className='_project_portfolio_card_modal_btn'>
-                    client porject
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-4 col-sm-12">
+          <div className="col-lg-4 col-md-4 col-sm-12">
               <div className="_project_portfolio_card">
                 <div className="_project_portfolio_card_img">
                   <img src="../../images/projects/project01.png" className='img-fluid _project_portfolio_card_img_tag' alt="image" />
@@ -113,7 +91,31 @@ const About = () => {
                 <div className="_project_portfolio_card_modal">
                   <button onClick={() => setShowProjectCard(true)} className='_project_portfolio_card_modal_btn'>
                     client porject
-                    { showProjectCard && <ProjectsCard/>}
+                    { showProjectCard && <ProjectsCard closeBtn= {closeBtn}/> }
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <div className="_project_portfolio_card">
+                <div className="_project_portfolio_card_img">
+                  <img src="../../images/projects/project01.png" className='img-fluid _project_portfolio_card_img_tag' alt="image" />
+                </div>
+                <div className="_project_portfolio_card_modal">
+                  <button className='_project_portfolio_card_modal_btn'>
+                    client porject
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <div className="_project_portfolio_card">
+                <div className="_project_portfolio_card_img">
+                  <img src="../../images/projects/project01.png" className='img-fluid _project_portfolio_card_img_tag' alt="image" />
+                </div>
+                <div className="_project_portfolio_card_modal">
+                  <button className='_project_portfolio_card_modal_btn'>
+                    client porject
                   </button>
                 </div>
               </div>
