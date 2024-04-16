@@ -1,12 +1,21 @@
 import React, { useState } from 'react';
 import '../../styles/css/main.css';
 import ProjectsCard from '../Modal/ProjectsCard';
+import ProjectsCardContent from '../Modal/ProjectsCardContent';
 
 const About = () => {
   
   const [showProjectCard, setShowProjectCard] = useState(false);
 
-  const closeBtn = () => setShowProjectCard(false);
+  const closeModal = () => setShowProjectCard(false);
+
+  const ClientPorclientject1 = () => {
+    return (
+      <>
+        <div>this is a client project1</div>
+      </>
+    )
+  }
 
   return (
     <>
@@ -83,7 +92,7 @@ const About = () => {
             </div>
           </div>
           <div className="row">
-          <div className="col-lg-4 col-md-4 col-sm-12">
+            <div className="col-lg-4 col-md-4 col-sm-12">
               <div className="_project_portfolio_card">
                 <div className="_project_portfolio_card_img">
                   <img src="../../images/projects/project01.png" className='img-fluid _project_portfolio_card_img_tag' alt="image" />
@@ -91,7 +100,7 @@ const About = () => {
                 <div className="_project_portfolio_card_modal">
                   <button onClick={() => setShowProjectCard(true)} className='_project_portfolio_card_modal_btn'>
                     client porject
-                    { showProjectCard && <ProjectsCard closeBtn= {closeBtn}/> }
+                    { showProjectCard && <ProjectsCard closeModal={closeModal} /> }
                   </button>
                 </div>
               </div>
@@ -102,9 +111,10 @@ const About = () => {
                   <img src="../../images/projects/project01.png" className='img-fluid _project_portfolio_card_img_tag' alt="image" />
                 </div>
                 <div className="_project_portfolio_card_modal">
-                  <button className='_project_portfolio_card_modal_btn'>
-                    client porject
+                  <button className='_project_portfolio_card_modal_btn' onClick={() => setShowProjectCard(true)}>
+                    client porject 1
                   </button>
+                  { showProjectCard && <ProjectsCardContent/>}
                 </div>
               </div>
             </div>
