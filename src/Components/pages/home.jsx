@@ -24,7 +24,7 @@ const Home = () => {
                         <div className="_home_portfolio_left_wrap">
                             <div className="_home_portfolio_img">
                                 <div className='_home_portfolio_img_div'>
-                                    <img src="/images/portfolio-img1.png" class="img-fluid _home_portfolio_img_tag" alt="image" />
+                                    <img src="../../images/portfolio-img1.png" className="img-fluid _home_portfolio_img_tag" alt="image" />
                                 </div>
                                 <div className="_home_portfolio_img_div_button_ic">
                                     <button className="_home_portfolio_img_div_button">
