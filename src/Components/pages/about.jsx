@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import statics from "../../../src/images/static.png"; 
+import sumizeit from "../../../src/images/Sumizeit-Dev.png"; 
 import '../../styles/css/main.css';
 import ProjectsCard from '../Modal/ProjectsCard';
 import ProjectsCardContent from '../Modal/ProjectsCardContent';
@@ -74,8 +76,30 @@ const About = () => {
                   </h3>
                   <div className="_about_portfolio_r8_job_info">
                     <h4 className='_about_portfolio_r8_job_info_txt1'>2021-Present</h4>
-                    <h3 className='_about_portfolio_r8_job_info_txt2'>web designer</h3>
-                    <p className='_about_portfolio_left_info_list_li_para'>working with figma, html5, css3, react js, JavaScript</p>
+                    <h3 className='_about_portfolio_r8_job_info_txt2'>Front-end developer</h3>
+                    <p className='_about_portfolio_left_info_list_li_para'>
+                      1) PSD/XD/Figma to Pixel Perfect Responsive HTML5 Templates. 
+                    </p>
+                    <p className='_about_portfolio_left_info_list_li_para'>  
+                      2) Cross-browser compatible and W3C validated HTML and CSS. 
+                    </p>
+                    <p className='_about_portfolio_left_info_list_li_para'>  
+                      3) Sound knowledge of HTML5, CSS, CSS3, Bootstrap, Flex-box, CSS3 animations, 
+                      media queries and jQuery plugins. 
+                    </p>
+                    <p className='_about_portfolio_left_info_list_li_para'>  
+                      4) Experience with Tailwind CSS. 
+                    </p>
+                    <p className='_about_portfolio_left_info_list_li_para'>  
+                      5) Solid understanding of the responsive design and cross-browser compatibility. 
+                    </p>
+                    <p className='_about_portfolio_left_info_list_li_para'>  
+                      6) Basic understanding of JavaScript, jQuery, PHP etc. Knows the value of writing clean, 
+                      elegant, and well-documented code. Code versioning tools like Git
+                    </p>
+                    <p className='_about_portfolio_left_info_list_li_para'>  
+                      7) Working with React js and typescript.
+                    </p>
                   </div> 
               </div>
             </div>
@@ -95,17 +119,54 @@ const About = () => {
             <div className="col-lg-4 col-md-4 col-sm-12">
               <div className="_project_portfolio_card">
                 <div className="_project_portfolio_card_img">
-                  <img src="../../images/projects/project01.png" className='img-fluid _project_portfolio_card_img_tag' alt="image" />
+                  <img src={statics} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
                 </div>
                 <div className="_project_portfolio_card_modal">
-                  <button onClick={() => setShowProjectCard(true)} className='_project_portfolio_card_modal_btn'>
-                    client porject
+                  <a className='_project_portfolio_card_modal_a' href="https://kaziamran-del.github.io/Portfolio/">Static portfolio</a>
+                  {/* <button onClick={() => setShowProjectCard(true)} className='_project_portfolio_card_modal_btn'> */}
+                    {/* client porject */}
                     {/* { showProjectCard && <ProjectsCard closeModal={closeModal} /> } */}
-                  </button>
+                  {/* </button> */}
+                </div>
+                <div className="_project_portfolio_card_content pt-2">
+                  <h4 className='_project_portfolio_card_modal_a'>Static portfolio project</h4>
                 </div>
               </div>
             </div>
-           
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <div className="_project_portfolio_card">
+                <div className="_project_portfolio_card_img">
+                  <img src={sumizeit} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
+                </div>
+                <div className="_project_portfolio_card_modal">
+                  <a className='_project_portfolio_card_modal_a' href="https://kaziamran.github.io/Sumizeit-Dev/">Sumizeit-Dev</a>
+                  {/* <button onClick={() => setShowProjectCard(true)} className='_project_portfolio_card_modal_btn'> */}
+                    {/* client porject */}
+                    {/* { showProjectCard && <ProjectsCard closeModal={closeModal} /> } */}
+                  {/* </button> */}
+                </div>
+                <div className="_project_portfolio_card_content pt-2">
+                  <h4 className='_project_portfolio_card_modal_a'>Sumizeit-Dev project</h4>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <div className="_project_portfolio_card">
+                <div className="_project_portfolio_card_img">
+                  <img src={statics} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
+                </div>
+                <div className="_project_portfolio_card_modal">
+                  <a className='_project_portfolio_card_modal_a' href="https://kaziamran.github.io/digital-agency-website-design/">Digital agency web</a>
+                  {/* <button onClick={() => setShowProjectCard(true)} className='_project_portfolio_card_modal_btn'> */}
+                    {/* client porject */}
+                    {/* { showProjectCard && <ProjectsCard closeModal={closeModal} /> } */}
+                  {/* </button> */}
+                </div>
+                <div className="_project_portfolio_card_content pt-2">
+                  <h4 className='_project_portfolio_card_modal_a'>Digital agency website project</h4>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

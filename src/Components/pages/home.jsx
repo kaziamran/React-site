@@ -1,5 +1,10 @@
 import React from 'react';
 import Navrouting from './Navrouting/navrouting';
+import ellipse01 from "../../../src/images/ellipse01.png";
+import ellipse02 from "../../../src/images/ellipse02.png";
+import ellipse03 from "../../../src/images/ellipse03.png";
+import ellipse04 from "../../../src/images/ellipse04.png";
+import profImg from "../../../src/images/portfolio-img1.png";
 import '../../styles/css/main.css';
 
 const Home = () => {
@@ -7,16 +12,16 @@ const Home = () => {
     <>
         <section className='_home_portfolio_wrapper'>
             <div className="_home_portfolio_elipse01">
-                <img src="../../images/ellipse01.png" className='img-fluid _home_portfolio_elipse01_img' alt="image" />
+                <img src={ellipse01} className='img-fluid _home_portfolio_elipse01_img' alt="image" />
             </div>
             <div className="_home_portfolio_elipse02">
-                <img src="../../images/ellipse02.png" className='img-fluid _home_portfolio_elipse01_img' alt="image" />
+                <img src={ellipse02} className='img-fluid _home_portfolio_elipse01_img' alt="image" />
             </div>
             <div className="_home_portfolio_elipse03">
-                <img src="../../images/ellipse03.png" className='img-fluid _home_portfolio_elipse01_img' alt="image" />
+                <img src={ellipse03} className='img-fluid _home_portfolio_elipse01_img' alt="image" />
             </div>
             <div className="_home_portfolio_elipse04">
-                <img src="../../images/ellipse04.png" className='img-fluid _home_portfolio_elipse01_img' alt="image" />
+                <img src={ellipse04} className='img-fluid _home_portfolio_elipse01_img' alt="image" />
             </div>
             <div className='container'>
                 <div className='row align-items-center'>
@@ -24,7 +29,7 @@ const Home = () => {
                         <div className="_home_portfolio_left_wrap">
                             <div className="_home_portfolio_img">
                                 <div className='_home_portfolio_img_div'>
-                                    <img src="../../images/portfolio-img1.png" className="img-fluid _home_portfolio_img_tag" alt="image" />
+                                    <img src={profImg} className="img-fluid _home_portfolio_img_tag" alt="image" />
                                 </div>
                                 <div className="_home_portfolio_img_div_button_ic">
                                     <button className="_home_portfolio_img_div_button">

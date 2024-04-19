@@ -631,3 +631,11 @@ a, button{
 }
 
 
+._project_portfolio_card_modal_a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: #fff;
+}
