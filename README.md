@@ -1,3 +1,5 @@
+--- First install npm, then write npm start;
+
 this is my first react project, using this 
 
 1. google font : Roboto & Montserrat -
