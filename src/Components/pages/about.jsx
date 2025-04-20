@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import statics from "../../../src/images/static.png"; 
 import sumizeit from "../../../src/images/Sumizeit-Dev.png"; 
 import digital from "../../../src/images/digital.png"; 
 import '../../styles/css/main.css';
@@ -63,7 +62,7 @@ const About = () => {
                   </div>
 
                   <div className="_home_portfolio_cnt_btns">
-                      <a href='https://drive.google.com/file/d/1j2VTZlGG4YYFgo_Rhl95Zkdhrgb8Uh-0/view?usp=share_link' className='_home_portfolio_cnt_btn1' target='_blank'>
+                      <a href='https://drive.google.com/file/d/1mfV-inlY8q0vM6xXjqTcsF4p3EeM2R7Z/view' className='_home_portfolio_cnt_btn1' target='_blank'>
                           Download cv
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M13 10H18L12 16L6 10H11V3H13V10ZM4 19H20V12H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V12H4V19Z" fill="#fff"></path></svg>
                       </a>
@@ -77,7 +76,8 @@ const About = () => {
                   </h3>
                   <div className="_about_portfolio_r8_job_info">
                     <h4 className='_about_portfolio_r8_job_info_txt1'>2021-Present</h4>
-                    <h3 className='_about_portfolio_r8_job_info_txt2'>Front-end developer</h3>
+                    <h3 className='_about_portfolio_r8_job_info_txt2'>Front-end Developer at <a href="https://www.appifylab.com/" target='_blank'>Appifylab</a> 
+                    </h3>
                     <p className='_about_portfolio_left_info_list_li_para'>
                       1) PSD/XD/Figma to Pixel Perfect Responsive HTML5 Templates. 
                     </p>
@@ -118,54 +118,43 @@ const About = () => {
           </div>
           <div className="row">
             <div className="col-lg-4 col-md-4 col-sm-12">
-              <div className="_project_portfolio_card">
+              <div className="_project_portfolio_single_card" href="https://kaziamran.github.io/profile/" target='_blank'>
                 <div className="_project_portfolio_card_img">
-                  <img src={statics} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
+                  <img src={profSite} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
                 </div>
-                <div className="_project_portfolio_card_modal">
-                  <a className='_project_portfolio_card_modal_a' href="https://kaziamran-del.github.io/Portfolio/">Static portfolio</a>
-                  {/* <button onClick={() => setShowProjectCard(true)} className='_project_portfolio_card_modal_btn'> */}
-                    {/* client porject */}
-                    {/* { showProjectCard && <ProjectsCard closeModal={closeModal} /> } */}
-                  {/* </button> */}
-                </div>
-                <div className="_project_portfolio_card_content pt-2">
-                  <h4 className='_project_portfolio_card_modal_a'>Static portfolio project</h4>
+                <div className="_project_portfolio_card_content pt-3">
+                  <a className='_project_portfolio_card_content_link' href="https://kaziamran.github.io/profile/" target='_blank'>Profile site</a>
                 </div>
               </div>
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12">
-              <div className="_project_portfolio_card">
+              <div className="_project_portfolio_single_card" href="https://kaziamran.github.io/Sumizeit-Dev/" target='_blank'>
                 <div className="_project_portfolio_card_img">
                   <img src={sumizeit} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
                 </div>
-                <div className="_project_portfolio_card_modal">
-                  <a className='_project_portfolio_card_modal_a' href="https://kaziamran.github.io/Sumizeit-Dev/">Sumizeit-Dev</a>
-                  {/* <button onClick={() => setShowProjectCard(true)} className='_project_portfolio_card_modal_btn'> */}
-                    {/* client porject */}
-                    {/* { showProjectCard && <ProjectsCard closeModal={closeModal} /> } */}
-                  {/* </button> */}
-                </div>
-                <div className="_project_portfolio_card_content pt-2">
-                  <h4 className='_project_portfolio_card_modal_a'>Sumizeit-Dev project</h4>
+                <div className="_project_portfolio_card_content pt-3">
+                  <a className='_project_portfolio_card_content_link' href="https://kaziamran.github.io/Sumizeit-Dev/" target='_blank'>Sumizeit-Dev site</a>
                 </div>
               </div>
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12">
-              <div className="_project_portfolio_card">
+              <div className="_project_portfolio_single_card" href="https://kaziamran.github.io/digital-agency-website-design/" target='_blank'>
+                <div className="_project_portfolio_card_img">
+                  <img src={digitalSite} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
+                </div>
+                <div className="_project_portfolio_card_content pt-3">
+                  <a className='_project_portfolio_card_content_link' href="https://kaziamran.github.io/digital-agency-website-design/" target='_blank'>Digital-agency website</a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <div className="_project_portfolio_single_card" href="https://kaziamran.github.io/xono-v2-dev/" target='_blank'>
                 <div className="_project_portfolio_card_img">
                   <img src={digital
                   } className='img-fluid _project_portfolio_card_img_tag' alt="image" />
                 </div>
-                <div className="_project_portfolio_card_modal">
-                  <a className='_project_portfolio_card_modal_a' href="https://kaziamran.github.io/digital-agency-website-design/">Digital agency web</a>
-                  {/* <button onClick={() => setShowProjectCard(true)} className='_project_portfolio_card_modal_btn'> */}
-                    {/* client porject */}
-                    {/* { showProjectCard && <ProjectsCard closeModal={closeModal} /> } */}
-                  {/* </button> */}
-                </div>
-                <div className="_project_portfolio_card_content pt-2">
-                  <h4 className='_project_portfolio_card_modal_a'>Digital agency website project</h4>
+                <div className="_project_portfolio_card_content pt-3">
+                  <a className='_project_portfolio_card_content_link' href="https://kaziamran.github.io/xono-v2-dev/" target='_blank'>xono-v2-Dev site</a>
                 </div>
               </div>
             </div>

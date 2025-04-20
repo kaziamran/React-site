@@ -384,6 +384,10 @@ a, button{
 ._home_portfolio_cnt_btn1:hover, ._home_portfolio_cnt_btn2:hover {
     background-color: #1011ac;
 }
+._width100 {
+    width: 100%;
+    border-radius: 6px !important;
+}
 
 ._home_portfolio_social_link_nav_link {
     display: flex;
@@ -487,7 +491,7 @@ a, button{
     font-size: 16px;
     line-height: 1.2;
     text-align: left;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     color: var(--about-txt);
 }
 ._about_portfolio_r8_job_info_txt2 {
@@ -496,38 +500,24 @@ a, button{
     font-size: 22px;
     line-height: 1.2;
     text-align: left;
-    margin-bottom: 2px;
+    margin-bottom: 14px;
     color: var(--about-txt);
-    text-transform: capitalize;
 }
 
-._project_portfolio_card {
-    background-color: #060773;
+._project_portfolio_single_card {
     border-radius: 8px;
-    padding: 10px;
+    padding: 12px 12px 20px;
     position: relative;
     z-index: 1;
     overflow: hidden;
     cursor: pointer;
     transition: .2s all ease-in-out;
+    box-shadow: 5px -5px 13px 1px #d3d3d4;
+    background-color: #fff;
+    margin-bottom: 24px;
+    min-height: 280px;
+    max-height: 270px;
 }
-._project_portfolio_card::before {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: #060773;
-    opacity: 0;
-    visibility: hidden;
-    transition: .2s all ease-in-out;
-}
-._project_portfolio_card:hover::before {
-    opacity: 0.77;
-    visibility: visible;
-    inset: 0;
-} 
 ._project_portfolio_card_img_tag {
     border-radius: 8px;
 }
@@ -578,6 +568,15 @@ a, button{
     z-index: 1;
 }
 
+._project_portfolio_card_content_link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: #060773;
+    display: block;
+}
 
 /* contact page */
 ._contact_portfolio_wrapper {
@@ -628,14 +627,4 @@ a, button{
     line-height: 1.2;
     text-align: left;
     color: #000000;
-}
-
-
-._project_portfolio_card_modal_a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.2;
-    text-align: center;
-    color: #fff;
 }

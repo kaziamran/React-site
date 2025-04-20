@@ -28,7 +28,7 @@ const Home = () => {
                     <div className='col-lg-4 col-md-12 col-sm-12'>
                         <div className="_home_portfolio_left_wrap">
                             <div className="_home_portfolio_img">
-                                <div className='_home_portfolio_img_div'>
+                                <div className=''>
                                     <img src={profImg} className="img-fluid _home_portfolio_img_tag" alt="image" />
                                 </div>
                                 <div className="_home_portfolio_img_div_button_ic">
@@ -81,7 +81,7 @@ const Home = () => {
                                     HTML5, CSS3, Bootstrap5, Wordpress, Figma and VScode etc.
                             </p>
                             <div className="_home_portfolio_cnt_btns">
-                                <a href='https://drive.google.com/file/d/1j2VTZlGG4YYFgo_Rhl95Zkdhrgb8Uh-0/view?usp=share_link' className='_home_portfolio_cnt_btn1' target='_blank'>
+                                <a href='https://drive.google.com/file/d/1mfV-inlY8q0vM6xXjqTcsF4p3EeM2R7Z/view' className='_home_portfolio_cnt_btn1' target='_blank'>
                                     Download cv
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M13 10H18L12 16L6 10H11V3H13V10ZM4 19H20V12H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V12H4V19Z" fill="#fff"></path></svg>
                                 </a>
