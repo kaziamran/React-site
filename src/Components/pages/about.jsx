@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import statics from "../../../src/images/static.png"; 
 import sumizeit from "../../../src/images/Sumizeit-Dev.png"; 
+import digital from "../../../src/images/digital.png"; 
 import '../../styles/css/main.css';
 import ProjectsCard from '../Modal/ProjectsCard';
 import ProjectsCardContent from '../Modal/ProjectsCardContent';
@@ -153,7 +154,8 @@ const About = () => {
             <div className="col-lg-4 col-md-4 col-sm-12">
               <div className="_project_portfolio_card">
                 <div className="_project_portfolio_card_img">
-                  <img src={statics} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
+                  <img src={digital
+                  } className='img-fluid _project_portfolio_card_img_tag' alt="image" />
                 </div>
                 <div className="_project_portfolio_card_modal">
                   <a className='_project_portfolio_card_modal_a' href="https://kaziamran.github.io/digital-agency-website-design/">Digital agency web</a>
