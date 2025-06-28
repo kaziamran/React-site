@@ -1,20 +1,26 @@
 import React, { useState } from 'react';
+import Modal from 'react';
 import sumizeit from "../../../src/images/Sumizeit-Dev.png"; 
-import digital from "../../../src/images/digital.png"; 
-import '../../styles/css/main.css';
+import xono from "../../../src/images/xono-v2-dev.png"; 
+import profSite from "../../../src/images/profile_site.jpeg";
+import digitalSite from "../../../src/images/digital.png";
+import babble from "../../images/babble.png";
 import ProjectsCard from '../Modal/ProjectsCard';
 import ProjectsCardContent from '../Modal/ProjectsCardContent';
+import '../../styles/css/main.css';
+
 
 const About = () => {
   
-  const [showProjectCard, setShowProjectCard] = useState(false);
+  const [showProject, setshowProject] = useState(false);
 
-  const closeModal = () => setShowProjectCard(false);
-
-  const ClientPorclientject1 = () => {
+  const projectModal = () => {
     return (
       <>
-        <div>this is a client project1</div>
+      <div className='modal01'>
+        <p>this is modal 01</p>
+        <button>hekk ee</button>
+      </div> 
       </>
     )
   }
@@ -125,6 +131,8 @@ const About = () => {
                 <div className="_project_portfolio_card_content pt-3">
                   <a className='_project_portfolio_card_content_link' href="https://kaziamran.github.io/profile/" target='_blank'>Profile site</a>
                 </div>
+                <button type="button" onClick={() => setshowProject(true)}>Modal</button>
+                { showProject && <projectModal/> }
               </div>
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12">
@@ -150,11 +158,20 @@ const About = () => {
             <div className="col-lg-4 col-md-4 col-sm-12">
               <div className="_project_portfolio_single_card" href="https://kaziamran.github.io/xono-v2-dev/" target='_blank'>
                 <div className="_project_portfolio_card_img">
-                  <img src={digital
-                  } className='img-fluid _project_portfolio_card_img_tag' alt="image" />
+                  <img src={xono} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
                 </div>
                 <div className="_project_portfolio_card_content pt-3">
                   <a className='_project_portfolio_card_content_link' href="https://kaziamran.github.io/xono-v2-dev/" target='_blank'>xono-v2-Dev site</a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <div className="_project_portfolio_single_card" href="https://kaziamran.github.io/babble/" target='_blank'>
+                <div className="_project_portfolio_card_img">
+                  <img src={babble} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
+                </div>
+                <div className="_project_portfolio_card_content pt-3">
+                  <a className='_project_portfolio_card_content_link' href="https://kaziamran.github.io/babble/" target='_blank'>babble site</a>
                 </div>
               </div>
             </div>

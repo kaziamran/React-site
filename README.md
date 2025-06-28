@@ -10,8 +10,6 @@ this is my first react project, using this
 
 4. follow themeforest for portolio design
 
-
-
 -- react routing
 -- add social links 
 -- create 3 awesome page
