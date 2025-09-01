@@ -4,7 +4,7 @@ import ellipse01 from "../../../src/images/ellipse01.png";
 import ellipse02 from "../../../src/images/ellipse02.png";
 import ellipse03 from "../../../src/images/ellipse03.png";
 import ellipse04 from "../../../src/images/ellipse04.png";
-import profImg from "../../../src/images/portfolio-img1.png";
+import profImg from "../../../src/images/amran-new.jpeg";
 import '../../styles/css/main.css';
 
 const Home = () => {

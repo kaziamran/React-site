@@ -124,15 +124,25 @@ const About = () => {
           </div>
           <div className="row">
             <div className="col-lg-4 col-md-4 col-sm-12">
-              <div className="_project_portfolio_single_card" href="https://kaziamran.github.io/profile/" target='_blank'>
+              <div className="_project_portfolio_single_card" onClick={()=> window.open('https://kaziamran.github.io/profile/', '_blank')}>
                 <div className="_project_portfolio_card_img">
                   <img src={profSite} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
                 </div>
                 <div className="_project_portfolio_card_content pt-3">
-                  <a className='_project_portfolio_card_content_link' href="https://kaziamran.github.io/profile/" target='_blank'>Profile site</a>
+                  <a className='_project_portfolio_card_content_link' href="https://kaziamran.github.io/profile/" target='_blank'>My site</a>
                 </div>
-                <button type="button" onClick={() => setshowProject(true)}>Modal</button>
-                { showProject && <projectModal/> }
+                {/* <button type="button" onClick={() => setshowProject(true)}>Modal</button>
+                { showProject && <projectModal/> } */}
+              </div>
+            </div>
+            <div className='col-lg-4 col-md-4 '>
+              <div className="_project_portfolio_single_card" onClick={()=> window.open('https://kaziamran.github.io/profile', '_blank')}>
+                <div className="_project_portfolio_card_img">
+                  <img src={profSite} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
+                </div>
+                <div className="_project_portfolio_card_content pt-3">
+                  <a className='_project_portfolio_card_content_link' href="https://kaziamran.github.io/profile/" target='_blank'>Redign Admin panel</a>
+                </div>
               </div>
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12">
