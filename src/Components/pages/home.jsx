@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState} from 'react';
 import Navrouting from './Navrouting/navrouting';
 import ellipse01 from "../../../src/images/ellipse01.png";
 import ellipse02 from "../../../src/images/ellipse02.png";
@@ -8,6 +8,9 @@ import profImg from "../../../src/images/amran-new.jpeg";
 import '../../styles/css/main.css';
 
 const Home = () => {
+
+    const [isOpen, setIsOpen] = useState(false); 
+
   return (
     <>
         <section className='_home_portfolio_wrapper'>
@@ -27,21 +30,30 @@ const Home = () => {
                 <div className='row align-items-center'>
                     <div className='col-lg-4 col-md-12 col-sm-12'>
                         <div className="_home_portfolio_left_wrap">
-                            <div className="_home_portfolio_img">
-                                <div className=''>
+                            <div className="_home_portfolio_img_wrap">
+                                <div className='_home_portfolio_img'>
                                     <img src={profImg} className="img-fluid _home_portfolio_img_tag" alt="image" />
                                 </div>
                                 <div className="_home_portfolio_img_div_button_ic">
-                                    <button className="_home_portfolio_img_div_button">
+                                    <button type="button" className="_home_portfolio_img_div_button" onClick={() => setIsOpen(true)}>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                                             <path d="M21 15V18H24V20H21V23H19V20H16V18H19V15H21ZM21.0082 3C21.556 3 22 3.44495 22 3.9934V13H20V5H4V18.999L14 9L17 12V14.829L14 11.8284L6.827 19H14V21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082ZM8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7Z" fill="rgba(6,7,115,1)"></path>
                                         </svg>
                                     </button>
+                                    {isOpen && (
+                                        <div className='home_img_modal' onClick={(e) => e.stopPropagation()}>
+                                            <h1 className='home_img_modal_txt'>Kazi Emran</h1>
+                                            <p className='home_img_modal_content'>3 years of experience in designing responsive websites with focus on usability and interaction design. Skilled in writing clean code and developing mobile friendly sites that provide seamless user experiences.</p>
+                                            <button className='home_img_modal_close' onClick={()=> setIsOpen(false)}>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="rgba(255,255,255,1)"><path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path></svg>
+                                            </button>
+                                        </div> 
+                                    )}
                                 </div>
                             </div>
                             <div className="_home_portfolio_social_link">
                                 <div className="_home_portfolio_social_link_heading">
-                                    <h5 className='_home_portfolio_social_link_heading_txt'>social links</h5>
+                                    <h2 className='_home_portfolio_social_link_heading_txt'>social links</h2>
                                 </div>
                                 <div className="_home_portfolio_social_link_nav">
                                     <ul className='_home_portfolio_social_link_nav_ul'>
@@ -74,7 +86,7 @@ const Home = () => {
                     <div className='col-lg-8 col-md-12 col-sm-12'>
                         <div className="_home_portfolio_cnt">
                             <h2 className='_home_portfolio_cnt_tlt'>this is kazi emran</h2>
-                            <h5 className='_home_portfolio_cnt_tlt1'>web developer</h5>
+                            <h3 className='_home_portfolio_cnt_tlt1'>web developer</h3>
                             <p className='_home_portfolio_cnt_para'>I'm a web developer. Currently 
                                 i'm working as a web designer in Appifylab. 
                                 My preferred tools are React js, JavaScript,

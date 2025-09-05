@@ -11,7 +11,8 @@ const ProjectsCard = ({closeModal}) => {
           <div className="_projects_card_modal_portfolio_header">
             <h3>ths is a client porject</h3>
             <p>lorum ipsum lorum ipsum lorum ipsum lorum 
-              ipsum lorum ipsum lorum ipsumlorum ipsum</p>
+              ipsum lorum ipsum lorum ipsumlorum ipsum
+            </p>
           </div>
           <div className="_projects_card_modal_portfolio_btn">
             <button className='btn btn-primary' onClick={closeModal}>Close</button>

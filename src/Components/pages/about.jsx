@@ -1,30 +1,15 @@
 import React, { useState } from 'react';
-import Modal from 'react';
 import sumizeit from "../../../src/images/Sumizeit-Dev.png"; 
 import xono from "../../../src/images/xono-v2-dev.png"; 
 import profSite from "../../../src/images/profile_site.jpeg";
 import digitalSite from "../../../src/images/digital.png";
 import babble from "../../images/babble.png";
 import itelsoft from "../../images/itelsoftbd.png"
-import ProjectsCard from '../Modal/ProjectsCard';
-import ProjectsCardContent from '../Modal/ProjectsCardContent';
+// import ProjectsCard from '../Modal/ProjectsCard';
+// import ProjectsCardContent from '../Modal/ProjectsCardContent';
 import '../../styles/css/main.css';
 
-
 const About = () => {
-  
-  const [showProject, setshowProject] = useState(false);
-
-  const projectModal = () => {
-    return (
-      <>
-      <div className='modal01'>
-        <p>this is modal 01</p>
-        <button>hekk ee</button>
-      </div> 
-      </>
-    )
-  }
 
   return (
     <>
@@ -33,8 +18,8 @@ const About = () => {
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12">
               <div className="_page_portfolio_title">
-                <h2 className='_page_portfolio_title1'>about <span className='_page_portfolio_title1_span'>me</span>
-                </h2>
+                <h1 className='_page_portfolio_title1'>about <span className='_page_portfolio_title1_span'>me</span>
+                </h1>
                 <span className='_page_portfolio_title_bg_span'>portfolio</span>
               </div>
             </div>
@@ -42,9 +27,9 @@ const About = () => {
           <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-6">
               <div className="_about_portfolio_left_info">
-                  <h3 className='_about_portfolio_left_info_txt'>
+                  <h2 className='_about_portfolio_left_info_txt'>
                     personal information
-                  </h3>
+                  </h2>
                   <div className="_about_portfolio_left_info_list">
                     <ul className='_about_portfolio_left_info_list_ul'>
                       <li className='_about_portfolio_left_info_list_li'>
@@ -82,9 +67,9 @@ const About = () => {
                     job experience
                   </h3>
                   <div className="_about_portfolio_r8_job_info">
-                    <h4 className='_about_portfolio_r8_job_info_txt1'>2021-Present</h4>
-                    <h3 className='_about_portfolio_r8_job_info_txt2'>Front-end Developer at <a href="https://www.appifylab.com/" target='_blank'>Appifylab</a> 
-                    </h3>
+                    <h3 className='_about_portfolio_r8_job_info_txt1'>2021-Present</h3>
+                    <h4 className='_about_portfolio_r8_job_info_txt2'>Front-end Developer at <a href="https://www.appifylab.com/" target='_blank'>Appifylab</a> 
+                    </h4>
                     <p className='_about_portfolio_left_info_list_li_para'>
                       1) PSD/XD/Figma to Pixel Perfect Responsive HTML5 Templates. 
                     </p>
@@ -117,18 +102,13 @@ const About = () => {
           <div className="row mt-5">
             <div className="col-lg-12 col-md-12 col-sm-12">
               <div className="_page_portfolio_title">
-                <h2 className='_page_portfolio_title1'>my <span className='_page_portfolio_title1_span'>project</span>
-                </h2>
+                <h4 className='_page_portfolio_title1'>my <span className='_page_portfolio_title1_span'>project</span></h4>
                 <span className='_page_portfolio_title_bg_span'>portfolio</span>
-              </div>
-              <div>
-                <button type="button" onClick={() => setshowProject(true)}>Modal</button>
-                
               </div>
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-4 col-md-4 col-sm-12">
+            <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="_project_portfolio_single_card" onClick={()=> window.open('https://kaziamran.github.io/profile/', '_blank')}>
                 <div className="_project_portfolio_card_img">
                   <img src={profSite} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
@@ -136,10 +116,9 @@ const About = () => {
                 <div className="_project_portfolio_card_content pt-3">
                   <a className='_project_portfolio_card_content_link' href="https://kaziamran.github.io/profile/" target='_blank'>My site</a>
                 </div>
-                
               </div>
             </div>
-            <div className='col-lg-4 col-md-4 col-sm-12'>
+            <div className='col-lg-4 col-md-6 col-sm-12'>
               <div className="_project_portfolio_single_card" onClick={()=> window.open('https://msit.app/?fbclid=IwY2xjawMnLgdleHRuA2FlbQIxMABicmlkETFOdENMRGxZMVlVSVExTTVCAR4vb-YUIEc7fzpG8jLnDn7sh5YTnxZnrohy6FP-aybzFKSgv3ZqiOOht38xxw_aem_cz2LxbRcqoS3ENc-DW_B1w', '_blank')}>
                 <div className="_project_portfolio_card_img">
                   <img src={itelsoft} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
@@ -149,7 +128,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-4 col-sm-12">
+            <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="_project_portfolio_single_card" onClick={()=> window.open('https://kaziamran.github.io/Sumizeit-Dev/', '/_blank')}>
                 <div className="_project_portfolio_card_img">
                   <img src={sumizeit} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
@@ -159,7 +138,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-4 col-sm-12">
+            <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="_project_portfolio_single_card" onClick={()=> window.open('https://kaziamran.github.io/digital-agency-website-design/', '_blank')}>
                 <div className="_project_portfolio_card_img">
                   <img src={digitalSite} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
@@ -169,7 +148,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-4 col-sm-12">
+            <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="_project_portfolio_single_card" onClick={()=> window.open('https://kaziamran.github.io/xono-v2-dev/', '_blank')}>
                 <div className="_project_portfolio_card_img">
                   <img src={xono} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
@@ -179,7 +158,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-4 col-sm-12">
+            <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="_project_portfolio_single_card" onClick={()=> window.open('https://kaziamran.github.io/babble/', '_blank')}>
                 <div className="_project_portfolio_card_img">
                   <img src={babble} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
