@@ -16,6 +16,13 @@ this is my first react project, using this
 -- change image
 -- add animation css
 
+// follow this design https://tunis-next.netlify.app/
+
+1. web3forms for email response
+https://www.youtube.com/watch?v=94_6JPDi13g
+
+2. Email js(Integrating EmailJS with React)
+https://www.youtube.com/watch?v=de3zhw6VsGU
 
 # Getting Started with Create React App
 
