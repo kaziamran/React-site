@@ -522,6 +522,7 @@ a, button{
 .modal01 {
     background: #333;
     color: #fff;
+    padding: 50px;
 }
 
 ._project_portfolio_card_modal {

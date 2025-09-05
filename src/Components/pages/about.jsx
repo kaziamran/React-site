@@ -5,6 +5,7 @@ import xono from "../../../src/images/xono-v2-dev.png";
 import profSite from "../../../src/images/profile_site.jpeg";
 import digitalSite from "../../../src/images/digital.png";
 import babble from "../../images/babble.png";
+import itelsoft from "../../images/itelsoftbd.png"
 import ProjectsCard from '../Modal/ProjectsCard';
 import ProjectsCardContent from '../Modal/ProjectsCardContent';
 import '../../styles/css/main.css';
@@ -120,6 +121,10 @@ const About = () => {
                 </h2>
                 <span className='_page_portfolio_title_bg_span'>portfolio</span>
               </div>
+              <div>
+                <button type="button" onClick={() => setshowProject(true)}>Modal</button>
+                
+              </div>
             </div>
           </div>
           <div className="row">
@@ -131,14 +136,13 @@ const About = () => {
                 <div className="_project_portfolio_card_content pt-3">
                   <a className='_project_portfolio_card_content_link' href="https://kaziamran.github.io/profile/" target='_blank'>My site</a>
                 </div>
-                {/* <button type="button" onClick={() => setshowProject(true)}>Modal</button>
-                { showProject && <projectModal/> } */}
+                
               </div>
             </div>
-            <div className='col-lg-4 col-md-4 '>
-              <div className="_project_portfolio_single_card" onClick={()=> window.open('https://kaziamran.github.io/profile', '_blank')}>
+            <div className='col-lg-4 col-md-4 col-sm-12'>
+              <div className="_project_portfolio_single_card" onClick={()=> window.open('https://msit.app/?fbclid=IwY2xjawMnLgdleHRuA2FlbQIxMABicmlkETFOdENMRGxZMVlVSVExTTVCAR4vb-YUIEc7fzpG8jLnDn7sh5YTnxZnrohy6FP-aybzFKSgv3ZqiOOht38xxw_aem_cz2LxbRcqoS3ENc-DW_B1w', '_blank')}>
                 <div className="_project_portfolio_card_img">
-                  <img src={profSite} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
+                  <img src={itelsoft} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
                 </div>
                 <div className="_project_portfolio_card_content pt-3">
                   <a className='_project_portfolio_card_content_link' href="https://kaziamran.github.io/profile/" target='_blank'>Redign Admin panel</a>
@@ -146,7 +150,7 @@ const About = () => {
               </div>
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12">
-              <div className="_project_portfolio_single_card" href="https://kaziamran.github.io/Sumizeit-Dev/" target='_blank'>
+              <div className="_project_portfolio_single_card" onClick={()=> window.open('https://kaziamran.github.io/Sumizeit-Dev/', '/_blank')}>
                 <div className="_project_portfolio_card_img">
                   <img src={sumizeit} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
                 </div>
@@ -156,7 +160,7 @@ const About = () => {
               </div>
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12">
-              <div className="_project_portfolio_single_card" href="https://kaziamran.github.io/digital-agency-website-design/" target='_blank'>
+              <div className="_project_portfolio_single_card" onClick={()=> window.open('https://kaziamran.github.io/digital-agency-website-design/', '_blank')}>
                 <div className="_project_portfolio_card_img">
                   <img src={digitalSite} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
                 </div>
@@ -166,7 +170,7 @@ const About = () => {
               </div>
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12">
-              <div className="_project_portfolio_single_card" href="https://kaziamran.github.io/xono-v2-dev/" target='_blank'>
+              <div className="_project_portfolio_single_card" onClick={()=> window.open('https://kaziamran.github.io/xono-v2-dev/', '_blank')}>
                 <div className="_project_portfolio_card_img">
                   <img src={xono} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
                 </div>
@@ -176,7 +180,7 @@ const About = () => {
               </div>
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12">
-              <div className="_project_portfolio_single_card" href="https://kaziamran.github.io/babble/" target='_blank'>
+              <div className="_project_portfolio_single_card" onClick={()=> window.open('https://kaziamran.github.io/babble/', '_blank')}>
                 <div className="_project_portfolio_card_img">
                   <img src={babble} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
                 </div>
