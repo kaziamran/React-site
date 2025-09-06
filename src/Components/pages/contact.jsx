@@ -51,10 +51,10 @@ const Contact = () => {
                   <input type="email" className="form-control" name="email" placeholder="Enter your email" required/>
                 </div>
               </div>
-              {/* <div className="form-group _contact_portfolio_form_list_subject">
+              <div className="form-group _contact_portfolio_form_list_subject">
                 <label for="inputSubject" className='_contact_portfolio_form_list1_label'>Your subject</label>
                 <input type="text" className="form-control" id="inputSubject" aria-describedby="subject" placeholder="Enter your Subject" />
-              </div> */}
+              </div>
               <div className="form-group _contact_portfolio_form_list_subject">
                 <label className='_contact_portfolio_form_list1_label'>Your message</label>
                 <textarea className='_contact_portfolio_form_textarea' name="message" placeholder='Your message' required></textarea>

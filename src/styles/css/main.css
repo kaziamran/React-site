@@ -539,7 +539,6 @@ a, button{
 
 ._project_portfolio_single_card {
     border-radius: 8px;
-    padding: 12px 12px 20px;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -547,9 +546,11 @@ a, button{
     transition: .2s all ease-in-out;
     box-shadow: 5px -5px 13px 1px #d3d3d4;
     background-color: #fff;
-    margin-bottom: 24px;;
+    margin-bottom: 24px;
+    padding: 3px 3px 20px 3px;
 }
 ._project_portfolio_card_img_tag {
+    height: 200px !important;
     border-radius: 8px;
 }
 ._project_portfolio_card_modal {
