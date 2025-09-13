@@ -5,7 +5,7 @@ import About from './Components/pages/about';
 import Contact from './Components/pages/contact';
 import Navrouting from './Components/pages/Navrouting/navrouting';
 
-import '../src/styles/css/bootstrap.min.css';
+import '../src/styles/css/bootstrap.css';
 import '../src/styles/css/main.css';
 
 
