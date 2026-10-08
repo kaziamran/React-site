@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import sumizeit from "../../../src/images/Sumizeit-Dev.png"; 
 import xono from "../../../src/images/xono-v2-dev.png"; 
 import profSite from "../../../src/images/profile_site.jpeg";
@@ -54,9 +54,13 @@ const About = () => {
                   </div>
 
                   <div className="_home_portfolio_cnt_btns">
-                      <a href='https://drive.google.com/file/d/1mfV-inlY8q0vM6xXjqTcsF4p3EeM2R7Z/view' className='_home_portfolio_cnt_btn1' target='_blank'>
-                          Download cv
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M13 10H18L12 16L6 10H11V3H13V10ZM4 19H20V12H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V12H4V19Z" fill="#fff"></path></svg>
+                      <a href='https://drive.google.com/file/d/1mfV-inlY8q0vM6xXjqTcsF4p3EeM2R7Z/view' 
+                        className='_home_portfolio_cnt_btn1' 
+                        target='_blank'
+                        rel="noreferrer"
+                      >
+                        Download cv
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M13 10H18L12 16L6 10H11V3H13V10ZM4 19H20V12H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V12H4V19Z" fill="#fff"></path></svg>
                       </a>
                   </div>  
               </div>
@@ -68,7 +72,13 @@ const About = () => {
                   </h3>
                   <div className="_about_portfolio_r8_job_info">
                     <h3 className='_about_portfolio_r8_job_info_txt1'>2021-Present</h3>
-                    <h4 className='_about_portfolio_r8_job_info_txt2'>Front-end Developer at <a href="https://www.appifylab.com/" target='_blank'>Appifylab</a> 
+                    <h4 className='_about_portfolio_r8_job_info_txt2'>Front-end Developer at 
+                      <a href="https://www.appifylab.com/" 
+                        target='_blank'
+                        rel="noreferrer"
+                      >
+                        Appifylab
+                      </a> 
                     </h4>
                     <p className='_about_portfolio_left_info_list_li_para'>
                       1) PSD/XD/Figma to Pixel Perfect Responsive HTML5 Templates. 
@@ -114,7 +124,13 @@ const About = () => {
                   <img src={profSite} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
                 </div>
                 <div className="_project_portfolio_card_content pt-3">
-                  <a className='_project_portfolio_card_content_link' href="https://kaziamran.github.io/profile/" target='_blank'>My site</a>
+                  <a className='_project_portfolio_card_content_link' 
+                    href="https://kaziamran.github.io/profile/" 
+                    target='_blank'
+                    rel="noreferrer"
+                  >
+                    My site
+                  </a>
                 </div>
               </div>
             </div>
@@ -124,7 +140,13 @@ const About = () => {
                   <img src={itelsoft} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
                 </div>
                 <div className="_project_portfolio_card_content pt-3">
-                  <a className='_project_portfolio_card_content_link' href="https://kaziamran.github.io/profile/" target='_blank'>Redign Admin panel</a>
+                  <a className='_project_portfolio_card_content_link' 
+                  href="https://kaziamran.github.io/profile/" 
+                  target='_blank'
+                  rel="noreferrer"
+                  >
+                    Redign Admin panel
+                  </a>
                 </div>
               </div>
             </div>
@@ -134,7 +156,13 @@ const About = () => {
                   <img src={sumizeit} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
                 </div>
                 <div className="_project_portfolio_card_content pt-3">
-                  <a className='_project_portfolio_card_content_link' href="https://kaziamran.github.io/Sumizeit-Dev/" target='_blank'>Sumizeit-Dev site</a>
+                  <a className='_project_portfolio_card_content_link' 
+                    href="https://kaziamran.github.io/Sumizeit-Dev/" 
+                    target='_blank'
+                    rel="noreferrer"
+                  >
+                    Sumizeit-Dev site
+                  </a>
                 </div>
               </div>
             </div>
@@ -144,7 +172,13 @@ const About = () => {
                   <img src={digitalSite} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
                 </div>
                 <div className="_project_portfolio_card_content pt-3">
-                  <a className='_project_portfolio_card_content_link' href="https://kaziamran.github.io/digital-agency-website-design/" target='_blank'>Digital-agency website</a>
+                  <a className='_project_portfolio_card_content_link' 
+                    href="https://kaziamran.github.io/digital-agency-website-design/" 
+                    target='_blank'
+                    rel="noreferrer"
+                  >
+                    Digital-agency website
+                  </a>
                 </div>
               </div>
             </div>
@@ -154,7 +188,13 @@ const About = () => {
                   <img src={xono} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
                 </div>
                 <div className="_project_portfolio_card_content pt-3">
-                  <a className='_project_portfolio_card_content_link' href="https://kaziamran.github.io/xono-v2-dev/" target='_blank'>xono-v2-Dev site</a>
+                  <a className='_project_portfolio_card_content_link' 
+                    href="https://kaziamran.github.io/xono-v2-dev/" 
+                    target='_blank'
+                    rel="noreferrer"
+                  >
+                    xono-v2-Dev site
+                  </a>
                 </div>
               </div>
             </div>
@@ -164,7 +204,13 @@ const About = () => {
                   <img src={babble} className='img-fluid _project_portfolio_card_img_tag' alt="image" />
                 </div>
                 <div className="_project_portfolio_card_content pt-3">
-                  <a className='_project_portfolio_card_content_link' href="https://kaziamran.github.io/babble/" target='_blank'>babble site</a>
+                  <a className='_project_portfolio_card_content_link' 
+                    href="https://kaziamran.github.io/babble/" 
+                    target='_blank'
+                    rel="noreferrer"
+                  >
+                    babble site
+                  </a>
                 </div>
               </div>
             </div>
