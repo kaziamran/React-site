@@ -1,4 +1,4 @@
---- First install npm, then write npm start;
+--- First npm installnpm, then write npm start;
 
 this is my first react project, using this 
 
